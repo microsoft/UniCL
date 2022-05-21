@@ -10,13 +10,17 @@ This is the official Pytorch implementation of UniCL:
   <img src="figures/unified_cv.png" width=98%/>
 </p>
 
-In this paper, we introduce a new perspective on commonly used image-label and image-text data by residing them in an image-text-label space. In this space, a new learning paradigm, called **Unified Contrastive Learning (UniCL)** with a single learning objective is proposed to seamlessly prompt the synergy of two data types. We demonstrate that UniCL is an effective way of learning **semantically rich yet discriminative representations**, universally for image recognition in zero-shot, linear-probe, fully finetuning and transfer learning scenarios. When scaled up to billions of data, UniCL can exclusively learn a powerful visual-semantic representation supporting dozens of downstream tasks shown in [Florence](https://arxiv.org/pdf/2111.11432v1.pdf). We will release our code and ckpts. Stay tunned!
+In this paper, we introduce a new perspective on commonly used image-label and image-text data by residing them in an image-text-label space. In this space, a new learning paradigm, called **Unified Contrastive Learning (UniCL)** with a single learning objective is proposed to seamlessly prompt the synergy of two data types. We demonstrate that UniCL is an effective way of learning **semantically rich yet discriminative representations**, universally for image recognition in zero-shot, linear-probe, fully finetuning and transfer learning scenarios. When scaled up to billions of data, UniCL can exclusively learn a powerful visual-semantic representation supporting dozens of downstream tasks shown in [Florence](https://arxiv.org/pdf/2111.11432v1.pdf).
 
-## Checklist
+We make the comparisons between UniCL with coventional learning methods below:
 
-- [x] Pretrained model and zero-shot evaluation
-- [ ] Pretraining code on image-label and image-text data
-- [ ] Downstream task transfer (COCO detection)
+<p align="center">
+  <img src="figures/unicl_comparison.png" width=98%/>
+</p>
+
+## Updates
+
+* [05/21/2022] Released pretrained model and zero-shot evaluation on ImageNet-1k.
 
 ## Benchmarking
 
