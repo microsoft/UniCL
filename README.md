@@ -29,7 +29,7 @@ In this paper, we introduce a new perspective on commonly used image-label and i
 | Swin-T | IN-1K + GYFCC-14M | 81.1 | 40.0 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in1k_yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
 | Swin-T | IN-1K + GCC-15M | 81.8 | 45.1 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in1k_gcc15m.pth)/[config](configs/unicl_swin_tiny.yaml)
 
-**Note that all the above models are trained without strong data augmentations like mixup and cutmix.**
+Note that all the above models are trained **without** strong data augmentations like mixup and cutmix.
 
 ### Image-text learning augmented by image-label data
 
@@ -39,7 +39,11 @@ In this paper, we introduce a new perspective on commonly used image-label and i
 | Swin-T | IN-21K | 28.5 | 37.8 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k.pth)/[config](configs/unicl_swin_tiny.yaml)
 | Swin-T | IN-21K (half) + YFCC-14M (half) | 36.4 | 45.5 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_half.pth)/[config](configs/unicl_swin_tiny.yaml)
 | Swin-T | IN-21K + YFCC-14M | 40.5 | 49.1 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
-| Swin-B | IN-21K + YFCC-14M + GCC-15M | 57.9 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in1k_yfcc14m_gcc15m_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
+| Swin-B | YFCC-14M | 37.8 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/yfcc14m_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
+| Swin-B | IN-21K | 29.9 | 42.4 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
+| Swin-B | IN-21K (half) + YFCC-14M (half) | 41.1 | 48.5 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_half_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
+| Swin-B | IN-21K + YFCC-14M | 44.3 | 52.2 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
+| Swin-B | IN-21K + YFCC-14M + GCC-15M | 57.9 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_gcc15m_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
 
 ## Getting Started
 
