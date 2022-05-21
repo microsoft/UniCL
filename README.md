@@ -14,9 +14,58 @@ In this paper, we introduce a new perspective on commonly used image-label and i
 
 ## Checklist
 
-- [ ] Pretrained model and zero-shot evaluation
+- [x] Pretrained model and zero-shot evaluation
 - [ ] Pretraining code on image-label and image-text data
 - [ ] Downstream task transfer (COCO detection)
+
+## Benchmarking
+
+### Image-label training augmented by image-text pairs
+
+| Model | Training Set | Top-1 on IN-1K | ZS on 14 datasets | Download
+| :----: | :---: | :---: | :---: | :---: |
+| Swin-T | IN-1K | 79.9 | 30.2 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in1k.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-T | IN-1K + GCC-3M | 80.2 | 39.0 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in1k_gcc3m.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-T | IN-1K + GYFCC-14M | 81.1 | 40.0 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in1k_yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-T | IN-1K + GCC-15M | 81.8 | 45.1 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in1k_gcc15m.pth)/[config](configs/unicl_swin_tiny.yaml)
+
+**Note that all the above models are trained without strong data augmentations like mixup and cutmix.**
+
+### Image-text learning augmented by image-label data
+
+| Model | Training Set | ZS on IN-1K | ZS on 14 datasets | Download
+| :----: | :---: | :---: | :---: | :---: |
+| Swin-T | YFCC-14M | 30.1 | 36.3 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-T | IN-21K | 28.5 | 37.8 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-T | IN-21K (half) + YFCC-14M (half) | 36.4 | 45.5 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_half.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-T | IN-21K + YFCC-14M | 40.5 | 49.1 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-B | IN-21K + YFCC-14M + GCC-15M | 57.9 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in1k_yfcc14m_gcc15m_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
+
+## Getting Started
+
+### Installation
+
+Please follow [INSTALL.md](./INSTALL.md) for installation.
+
+### Data preparation
+
+Please following [DATA.md](./DATA.md) for data preparation.
+
+### Evaluation
+
+To evaluate a pre-trained UniCL on ImageNet val, run:
+
+```bash
+python -m torch.distributed.launch --nproc_per_node <num-of-gpus-to-use> --master_port 12345 main.py --eval \
+--cfg <config-file> --resume <checkpoint> --data-path <imagenet-path> 
+```
+
+For example, to evaluate the UniCL-Swin-Tiny trained on YFCC-14M with a single GPU:
+
+```bash
+python -m torch.distributed.launch --nproc_per_node 1 --master_port 12345 main.py --eval \
+--cfg configs/unicl_swin_tiny.yaml --resume yfcc14m.pth --data-path <imagenet-path>
+```
 
 ## Citation
 

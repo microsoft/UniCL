@@ -1,0 +1,16 @@
+MODEL:
+  NAME: unicl_swin_base
+  DIM_PROJECTION: 512  
+  IMAGE_ENCODER:
+    TYPE: swin
+    DROP_PATH_RATE: 0.5
+    SWIN:
+      EMBED_DIM: 128
+      DEPTHS: [ 2, 2, 18, 2 ]
+      NUM_HEADS: [ 4, 8, 16, 32 ]
+      WINDOW_SIZE: 7
+  TEXT_ENCODER:
+    NAME: 'transformer'
+    WIDTH: 512
+    HEADS: 8
+    LAYERS: 12  
