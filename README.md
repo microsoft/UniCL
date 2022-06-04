@@ -20,6 +20,7 @@ We make the comparisons between UniCL with coventional learning methods below:
 
 ## Updates
 
+* [06/04/2022] Checkout out our [Gradio demo](https://huggingface.co/spaces/jw2yang/unicl-demo).
 * [05/21/2022] Released pretrained model and zero-shot evaluation on ImageNet-1k.
 
 ## Benchmarking
