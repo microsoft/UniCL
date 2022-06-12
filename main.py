@@ -172,7 +172,7 @@ def train_one_epoch(config, model, criterion, data_loader, optimizer, epoch, mix
             samples, targets = mixup_fn(samples, targets)
 
         features_image, features_text, tau = model(samples, tokens)
-
+        ouputs = tau * features_image @ features_text
         # gather features from all gpus
         
         if config.TRAIN.ACCUMULATION_STEPS > 1:
