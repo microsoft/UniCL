@@ -20,6 +20,7 @@ We make the comparisons between UniCL with coventional learning methods below:
 
 ## Updates
 
+* [06/19/2022] Released the evaluation benchmark used in UniCL, [ELEVATER](https://arxiv.org/abs/2204.08790), which contains 20 downstream image classification tasks. More info: [[Benchmark]](https://computer-vision-in-the-wild.github.io/ELEVATER/) [[Toolkit]](https://github.com/Computer-Vision-in-the-Wild/Elevater_Toolkit_IC)  [[Paper]](https://arxiv.org/abs/2204.08790)
 * [06/04/2022] Checkout out our [Gradio demo](https://huggingface.co/spaces/jw2yang/unicl-demo).
 * [05/21/2022] Released pretrained model and zero-shot evaluation on ImageNet-1k.
 
@@ -75,6 +76,11 @@ For example, to evaluate the UniCL-Swin-Tiny trained on YFCC-14M with a single G
 python -m torch.distributed.launch --nproc_per_node 1 --master_port 12345 main.py --eval \
 --cfg configs/unicl_swin_tiny.yaml --resume yfcc14m.pth --data-path <imagenet-path>
 ```
+
+###  The Image Classification in the Wild Benchmark
+Interested in evaluating UniCL for downstream image classification tasks, and comparing performance on the same task suite? We release [ELEVATER](https://computer-vision-in-the-wild.github.io/ELEVATER/) benchmark, which has 20 downstream image classification tasks. The [software toolkit](https://github.com/Computer-Vision-in-the-Wild/Elevater_Toolkit_IC) is also released to ease the process to onboad new models. It will be hosted as a challenge at the [CV in the Wild Workshop @ ECCV 2022](https://computer-vision-in-the-wild.github.io/eccv-2022/). We hope our benchmark and toolkit can encourage the community to solve the challenge of image classification in the wild!
+
+Please see more instructions: [[Benchmark]](https://computer-vision-in-the-wild.github.io/ELEVATER/) [[Toolkit]](https://github.com/Computer-Vision-in-the-Wild/Elevater_Toolkit_IC) [[Paper]](https://arxiv.org/abs/2204.08790)
 
 ## Citation
 
