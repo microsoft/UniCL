@@ -21,7 +21,7 @@ We make the comparisons between UniCL with coventional learning methods below:
 ## Updates
 
 * [06/19/2022] Released the evaluation benchmark used in UniCL, [ELEVATER](https://arxiv.org/abs/2204.08790), which contains 20 downstream image classification tasks. More info: [[Benchmark]](https://computer-vision-in-the-wild.github.io/ELEVATER/) [[Toolkit]](https://github.com/Computer-Vision-in-the-Wild/Elevater_Toolkit_IC)  [[Paper]](https://arxiv.org/abs/2204.08790)
-* [06/04/2022] Checkout out our [Gradio demo](https://huggingface.co/spaces/jw2yang/unicl-demo).
+* [06/04/2022] Checkout out our [Huggingface Gradio demo](https://huggingface.co/spaces/CVPR/unicl-zero-shot-img-recog).
 * [05/21/2022] Released pretrained model and zero-shot evaluation on ImageNet-1k.
 
 ## Benchmarking
