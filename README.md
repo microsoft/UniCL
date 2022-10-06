@@ -20,6 +20,7 @@ We make the comparisons between UniCL with coventional learning methods below:
 
 ## Updates
 
+* :collision: [10/05/2022] How do we use the pretrainied UniCL checkpoints? Beyond the zero-shot classification shown in our paper, we can use them for object detection. Now [RegionCLIP](https://github.com/microsoft/RegionCLIP/tree/zero-shot) supports to use pretrained UniCL transformer models, such as Swin, ViT for open-vocabulary object detection without any finetuning. Check it out!
 * [08/19/2022] Organizing ECCV Workshop [*Computer Vision in the Wild (CVinW)*](https://computer-vision-in-the-wild.github.io/eccv-2022/), where two challenges are hosted to evaluate the zero-shot, few-shot and full-shot performance of pre-trained vision models in downstream tasks:
   - [``*Image Classification in the Wild (ICinW)*''](https://eval.ai/web/challenges/challenge-page/1832/overview) Challenge evaluates on 20 image classification tasks.
   - [``*Object Detection in the Wild (ODinW)*''](https://eval.ai/web/challenges/challenge-page/1839/overview) Challenge evaluates on 35 object detection tasks.
