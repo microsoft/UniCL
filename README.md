@@ -49,17 +49,17 @@ Note that all the above models are trained **without** strong data augmentations
 
 ### Image-text learning augmented by image-label data
 
-| Model | Training Set | ZS on IN-1K | ZS on 14 datasets | Download
-| :----: | :---: | :---: | :---: | :---: |
-| Swin-T | YFCC-14M | 30.1 | 36.3 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
-| Swin-T | IN-21K | 28.5 | 37.8 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k.pth)/[config](configs/unicl_swin_tiny.yaml)
-| Swin-T | IN-21K (half) + YFCC-14M (half) | 36.4 | 45.5 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_half.pth)/[config](configs/unicl_swin_tiny.yaml)
-| Swin-T | IN-21K + YFCC-14M | 40.5 | 49.1 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
-| Swin-B | YFCC-14M | 37.8 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/yfcc14m_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
-| Swin-B | IN-21K | 29.9 | 42.4 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
-| Swin-B | IN-21K (half) + YFCC-14M (half) | 41.1 | 48.5 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_half_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
-| Swin-B | IN-21K + YFCC-14M | 44.3 | 52.2 | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
-| Swin-B | IN-21K + YFCC-14M + GCC-15M | 57.9 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_gcc15m_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
+| Model | Training Set | ZS on IN-1K | ZS on 14 datasets | ZS on 20 datasets | Download
+| :----: | :---: | :---: | :---: | :---: | :---: |
+| Swin-T | YFCC-14M | 30.1 | 36.3 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-T | IN-21K | 28.5 | 37.8 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-T | IN-21K (half) + YFCC-14M (half) | 36.4 | 45.5 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_half.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-T | IN-21K + YFCC-14M | 40.5 | 49.1 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-B | IN-21K | 29.9 | 42.4 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
+| Swin-B | IN-21K (half) + YFCC-14M (half) | 41.1 | 48.5 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_half_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
+| Swin-B | IN-21K + YFCC-14M | 44.3 | 52.2 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
+| Swin-B | IN-21K + GCC-15M + YFCC-14M | 52.2 | - | 43.2 | [ckpt]()/[config](configs/unicl_swin_base.yaml)
+| Focal-B | IN-21K + GCC-15M + YFCC-14M | 54.2 | - | 44.0 | [ckpt]()/[config]()
 
 ## Getting Started
 
