@@ -61,6 +61,8 @@ Note that all the above models are trained **without** strong data augmentations
 | Swin-B | IN-21K + GCC-15M + YFCC-14M | 52.2 | - | 43.2 | [ckpt]()/[config](configs/unicl_swin_base.yaml)
 | Focal-B | IN-21K + GCC-15M + YFCC-14M | 54.2 | - | 44.0 | [ckpt]()/[config]()
 
+**NOTE**: Setting "ZS on 20 datasets" is used in the ICinW benchmark.
+
 ## Getting Started
 
 ### Installation
