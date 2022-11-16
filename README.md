@@ -53,6 +53,7 @@ Note that all the above models are trained **without** strong data augmentations
 | :----: | :---: | :---: | :---: | :---: | :---: |
 | Swin-T | YFCC-14M | 30.1 | 36.3 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
 | Swin-T | IN-21K | 28.5 | 37.8 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k.pth)/[config](configs/unicl_swin_tiny.yaml)
+| Swin-T | IN-22K | 66.8 | 38.9 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in22k.pth)/[config](configs/unicl_swin_tiny.yaml)
 | Swin-T | IN-21K (half) + YFCC-14M (half) | 36.4 | 45.5 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m_half.pth)/[config](configs/unicl_swin_tiny.yaml)
 | Swin-T | IN-21K + YFCC-14M | 40.5 | 49.1 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_yfcc14m.pth)/[config](configs/unicl_swin_tiny.yaml)
 | Swin-B | IN-21K | 29.9 | 42.4 | - | [ckpt](https://projects4jw.blob.core.windows.net/unicl/release/in21k_swin_base.pth)/[config](configs/unicl_swin_base.yaml)
