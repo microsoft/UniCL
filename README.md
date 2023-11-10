@@ -18,6 +18,7 @@ We make the comparisons between UniCL with coventional learning methods below:
   <img src="figures/unicl_comparison.png" width=98%/>
 </p>
 
+## :collision: All previous links are broken. Please find all checkpoints here: [https://github.com/microsoft/UniCL/releases/tag/v1.0](https://github.com/microsoft/UniCL/releases/tag/v1.0)
 ## Updates
 * [11/24/2022] [KLITE](https://arxiv.org/abs/2204.09222), the knowledge-augmented version of UniCL, is publicly released on [Github](https://github.com/microsoft/klite).
 * :collision: [10/05/2022] How do we use the pretrainied UniCL checkpoints? Beyond the zero-shot classification shown in our paper, we can use them for object detection. Now [RegionCLIP](https://github.com/microsoft/RegionCLIP/tree/zero-shot) supports to use pretrained UniCL transformer models, such as Swin, ViT for open-vocabulary object detection without any finetuning. Check it out!
